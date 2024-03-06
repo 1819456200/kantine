@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+             emailjs.init('R3pmjvR5iRDw81EHe')
+        })();
+    </script>
+</head>
+<body>
+    <!-- overordnet box til al style -->
+<div class="box">
+    <div>
+    <h3>Kontakt os
+    </h3>
+    <form>  
+        <div>
+            <label>Dit navn</label>
+            <div>
+                <input class="navn" id="name"  required>
+            </div>
+        </div>
+        <div>
+            <label>Din email</label>
+            <div>
+                <input class="mail" id="email" required>
+            </div>
+        </div>
+        <div>
+            <label>Besked</label>
+            <div>
+                <textarea rows="6" id="message" required></textarea>
+            </div>
+        </div>
+        <div>
+            <button onclick = "sendMail()" >send besked</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="kontaktmail.js" defer></script>
+    </body>
+</html>
